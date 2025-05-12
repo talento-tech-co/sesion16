@@ -1,0 +1,112 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: #333;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+/* Navegación fija (Sticky) */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+

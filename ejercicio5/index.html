@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        .galeria img {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #imagen-grande {
+            width: 500px;
+            height: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+    <script>
+        function mostrarImagenGrande(src) {
+            document.getElementById("imagen-grande").src = src;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Galería de Imágenes</h1>
+    <div class="galeria">
+        <img src="img1.jpg" alt="Imagen 1" onclick="mostrarImagenGrande(this.src)">
+        <img src="img2.jpg" alt="Imagen 2" onclick="mostrarImagenGrande(this.src)">
+        <img src="img3.jpg" alt="Imagen 3" onclick="mostrarImagenGrande(this.src)">
+    </div>
+    <img id="imagen-grande" src="img1.jpg" alt="Imagen Grande">
+</body>
+
+</html>
